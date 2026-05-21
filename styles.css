@@ -1,0 +1,122 @@
+:root{
+  --fons: #7499d1;
+  --capcalera: #1f2a44;
+  --text: #ffffff;
+  --hover: #4a6fa5;
+
+  --titol: 30px;
+  --subtitol: 22px;
+  --text-mida: 16px;
+
+  --espai: 20px;
+}
+
+body{
+  margin:0;
+  font-family: Arial;
+  background: var(--fons);
+  color: var(--text);
+  text-align: center;
+}
+
+.header, .footer{
+  background: var(--capcalera);
+  padding: var(--espai);
+}
+
+.nom{
+  font-weight: bold;
+}
+
+.menu{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a{
+  color: var(--text);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.menu a:hover{
+  color: var(--hover);
+}
+.card{
+  padding: 40px 20px;
+}
+
+h1, h2{
+  margin: 0 0 15px 0;
+}
+
+p{
+  font-size: var(--text-mida);
+  margin: 0 auto 18px auto;
+  max-width: 700px;
+  line-height: 1.6; 
+}
+
+li{
+  font-size: var(--text-mida);
+  margin: 8px 0; 
+}
+
+ul{
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.titol{
+  font-size: var(--titol);
+  margin-bottom: 15px;
+}
+
+h2{
+  font-size: var(--subtitol);
+}
+
+.foto{
+  width: 150px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.prototip{
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.presentacio{
+  background: #3e4f6b;
+}
+
+.habilitats{
+  background: #35537a;
+}
+
+.projectes{
+  background: #2e4665;
+}
+
+.prototip_seccio{
+  background: #263a55;
+}
+
+@media (min-width: 751px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu{
+    margin-top: 0;
+  }
+}
